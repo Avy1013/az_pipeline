@@ -8,7 +8,7 @@ steps:
 - task: Docker@0  # Installs the Docker task for Azure Pipelines
   inputs:
     containerRegistryType: 'ACR'  # You can change this to 'ACR' if using Azure Container Registry
-    command: 'push'
+    command: 'pull'
     imageName: 'hello-world'  # Matches the image name from Docker build
     registryLocation: 'docker.io'  # Change if using a private registry
 
